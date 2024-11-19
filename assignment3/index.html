@@ -1,0 +1,88 @@
+<!-- almost all iterations of the Exorcist movie posters are different, so please refer to reference.jpg in img
+I chose to go with the re-release poster as it uses a good amount of text elements in differing positions, sizes, and fonts,
+whereas original release of the poster lack text elements or multiple image elements
+Zeyn Hirji
+SN: 200613627 -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- adding metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is The Exorcist Movie poster recreated using CSS - Assignment 3 by Zeyn Hirji, SN: 200613627">
+  <meta name="robots" content="noindex, nofollow">
+  <title>The Exorcist</title>
+
+  <!-- add fonts -->
+  <!-- the movie poster uses an unsupported font called Gemini for the title and Kabel for the footer - I have opted to use Quattrocentro Sans, Cinzel, and Big Shoulders Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Cinzel:wght@400..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- adding css -->
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- the header is used to represent the font at the top of the poster -->
+<header>
+  <div>
+    <h2>The Scariest Movie Of All Time Has Returned</h2>
+    <!-- using <u> to underline -->
+    <h2>In A <u>Version You've Never Seen</u></h2>
+  </div>
+</header>
+
+<main>
+  <!-- adding image in the main -->
+  <img src="img/background.jpg" alt="The Exorcist Movie Poster Background Image">
+    <section>
+      <div>
+        <p>WILLIAM PETER BLATTY'S</p>
+        <h2>THE EXORCIST</h2>
+        <!-- using class here to edit this specific usage of <p>, span is used to mark text that is smaller in the sentence -->
+        <p class="credits" id="credits"><span>DIRECTED BY</span> WILLIAM FRIEDKIN</p>
+      </div>
+    </section>
+</main>
+
+<footer>
+  <div>
+    <!-- again, span is used to mark font that is smaller in the sentence -->
+    <h6>ELLEN BURSTYN MAX VON SYDOW LEE J.COBB KITTY WINN JACK M<span>AC</span>GOWRAN JASON MILLER <span>AS FATHER KARRAS</span> LINDA BLAIR <span>AS REGAN</span></h6>
+    <h6><span>PRODUCED BY</span> WILLIAM PETER BLATTY <span>EXECUTIVE PRODUCER</span> NOAH MARSHALL <span>SCREENPLAY BY</span> WILLIAM PETER BLATTY <span>BASED ON HIS NOVEL</span></h6>
+  </div>
+
+  <!-- viewer discretion logo in the bottom left -->
+  <section>
+    <div>
+      <img src="/img/warning.png" alt="Warning label - Rated R">
+    </div>
+  </section>
+
+<!-- using inline in CSS to line these up side by side, so I am adding them into 1 section -->
+  <section>
+    <div>
+      <!-- adding hyperlink to movie webpage -->
+      <!-- using span to assign 2 different z-index values to ensure links are "visible" and clickable -->
+      <!-- target blank to open new browser window to not redirect traffic from the poster -->
+      <p><a href="https://youtu.be/BU2eYAO31Cc?si=zRQWrCLyq2fLkpaW" class="hyperlink" target="_blank">www.theexorcist.net</a></p>
+      <span>New Digitally Restored Sound</span>
+      <span>AOL Keyword: The Exorcist</span>
+    </div>
+  </section>
+
+  <!-- bottom left warner bros movie poster -->
+  <section>
+    <div id="warnerbros" class="warnerbros">
+      <!-- making image clickable and lead to warner bros official page for the move -->
+      <!-- 2nd hyperlink -->
+      <!-- target blank to open new browser window to not redirect traffic from the poster -->
+      <a href="https://www.warnerbros.com/movies/exorcist" target="_blank"><img src="img/warnerbros.jpg" alt="Warner Bros Movie Logo"></a>
+    </div>
+  </section>
+</footer>
+
+</body>
+</html>

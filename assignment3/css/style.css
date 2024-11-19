@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    /* eyedropper was used to colour match font and background colour */
+    background-color: #0c0c0c;
+}
+body > header{
+    width: auto;
+    /* header is 2% of viewport height */
+    height: 2vh;
+}
+body > header > div{
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    padding-top: 7px;
+    color: #eaeaea;
+    text-align: center;
+    /* using z-index to make sure the text overlaps the image */
+    z-index: 1;    /* https://developer.mozilla.org/en-US/docs/Web/CSS/z-index */
+    position: relative;
+    /* offsetting the underline in the text as in the movie poster */
+    text-underline-offset: 8px;  /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset */
+}
+body > main{
+    background-color: #0c0c0c;
+}
+body > main > img{
+    /* occupying lowest z-index number */
+    z-index: 0;
+    position: relative;
+    /* setting margin top and bottom to move font on top of image, using left and right to center image */
+    margin: -175px auto -95px auto; /* using shorthand for margin top, margin right, margin bottom, margin left */
+    width: 63%;
+    height: auto;
+    padding-left: 212px;
+}
+body > main > section > div{
+    /* spacing between the director credits and the footer */
+    padding-bottom: 20px;
+}
+body > main > section > div > h2{
+    /* "The Exorcist" main font */
+    font-family: "Cinzel", sans-serif;
+    font-weight: bold;
+    font-size: 92px;
+    color: #a997ce;
+    text-align: center;
+    margin: -12px;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+body > main > section > div > p{
+    /* font surrounding the main title font */
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+    color: #a4a4a4;
+    text-align: center;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+}
+.credits{
+    /* specifically calling the paragraph element under the title, not the one above */
+    margin-top: -28px;
+}
+body > main > section > div > p > span{
+    /* making certain font smaller in the sentences as to match the poster, specifically marked using span */
+    font-size: 24px;
+}
+footer{
+    padding-top: -50px;
+    background-color: #0c0c0c;
+}
+footer > div > h6{
+    /* font controls used in footer credits */
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+    color: #a4a4a4;
+    text-align: center;
+    margin: 0;
+}
+footer > div > h6 > span{
+    /* using span in a same way to the body, making certain text smaller */
+    font-size: 24px;
+}
+footer > section > div > img{
+    /* editing the position and size of the viewer discretion logo */
+    height: 10%;
+    width: 10%;
+    padding-left: 150px;
+    padding-top: 10px;
+}
+footer > section > div > span{
+    /* this is the font and position controls for the 3 paragraph elements */
+    /* inline lines them up side by side */
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #eaeaea;
+    text-align: center;
+    /* margin is used to change position of font and the spacing between them */
+    margin-right: -210px;
+    margin-top: -100px;
+    padding-left: 295px;
+    padding-bottom: 15px;
+    /* z-index used again to make sure they are above the image and the logos */
+    z-index: 1;
+    position: relative;
+    bottom: 20px;
+}
+footer > section > div > p{
+    /* this is the font and position controls for the 3 paragraph elements */
+    /* inline lines them up side by side */
+    display: inline;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #eaeaea;
+    text-align: center;
+    /* margin is used to change position of font and the spacing between them */
+    margin-right: -210px;
+    margin-top: -100px;
+    padding-left: 285px;
+    padding-bottom: 15px;
+    /* z-index is used at a higher value to make sure the link is clickable */
+    z-index: 2;
+    position: relative;
+    bottom: 20px;
+}
+.warnerbros{
+    display: inline;
+    background-color: #0c0c0c;
+    width: 10%;
+    height: 10%;
+    padding-top: 10px;
+    margin-left: 890px;
+    /* bleeds slightly into the text so it is occupying the lowest z-index */
+    z-index: 0;
+    position: relative;
+    /* moving it around */
+    bottom: 60px;
+    right: -50px;
+}
